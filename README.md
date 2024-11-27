@@ -29,3 +29,6 @@ This project is an interactive **Multi-Level Feedback Queue (MLFQ)** simulator i
   - Displays the **Gantt Chart** in a textual timeline format, highlighting the process execution sequence.
   - Displays the **Queue Intervals**  in a textual timeline format.
   - Displays the **Queue Visualisation Table **  in a tabular form.
+
+## For instruction
+  -**Refer to the PPT file.**
