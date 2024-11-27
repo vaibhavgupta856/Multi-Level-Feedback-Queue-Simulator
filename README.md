@@ -2,7 +2,8 @@
 
 ## LINK
 
-https://vaibhavgupta856.github.io/Multi-Level-Feedback-Queue-Simulator/
+<a href="https://vaibhavgupta856.github.io/Multi-Level-Feedback-Queue-Simulator/" target="_blank" rel="noopener noreferrer">Multi-Level Feedback Queue Simulator</a>
+
 
 This project is an interactive Multi-Level Feedback Queue (MLFQ) simulator implemented in HTML, CSS, and JavaScript. It allows users to visualize the execution of processes across multiple queues with different scheduling algorithms, providing detailed insights into scheduling behaviors. This project was developed in collaboration by **Vaibhav Gupta** and **Rupesh Bhusare**.
 
