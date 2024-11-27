@@ -2,9 +2,9 @@
 
 ## LINK
 
-https://67479447a6e901a89682cddf--dynamic-dango-9c1934.netlify.app/
+https://vaibhavgupta856.github.io/Multi-Level-Feedback-Queue-Simulator/
 
-This project is an interactive **Multi-Level Feedback Queue (MLFQ)** simulator implemented in **HTML**, **CSS**, and **JavaScript**. It allows users to visualize the execution of processes across multiple queues with different scheduling algorithms, providing detailed insights into scheduling behaviors.
+This project is an interactive Multi-Level Feedback Queue (MLFQ) simulator implemented in HTML, CSS, and JavaScript. It allows users to visualize the execution of processes across multiple queues with different scheduling algorithms, providing detailed insights into scheduling behaviors. This project was developed in collaboration by **Vaibhav Gupta** and **Rupesh Bhusare**.
 
 ---
 ![MLFQ Simulator Screenshot](image1.png)
