@@ -31,4 +31,4 @@ This project is an interactive Multi-Level Feedback Queue (MLFQ) simulator imple
   - Displays the **Queue Visualisation Table **  in a tabular form.
 
 ## For instruction
-  - **Refer to the PPT file.**
+  - Refer to the MLFQ.pdf** file.
