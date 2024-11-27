@@ -1,0 +1,249 @@
+/*
+
+Name      Rupesh Bhusare, Vaibhav Gupta
+Roll No.      2203106   ,   2203134   
+
+*/
+
+
+:root {
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --accent: #e74c3c;
+  --background: #ecf0f1;
+  --text: #2c3e50;
+  --success: #2ecc71;
+  --border: #bdc3c7;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 20px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.211);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+h1::after, h3::after {
+  content: '';
+  display: none;
+  width: 70px;
+  height: 3px;
+  background: var(--secondary);
+  margin: 10px auto;
+}
+
+.queue-selection, .add-process {
+  background: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.188);
+}
+
+select, input {
+  padding: 10px 15px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin: 5px;
+  min-width: 120px;
+}
+
+select:focus, input:focus {
+  border-color: var(--secondary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Buttons */
+button {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#run-simulation {
+  background: var(--success);
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  min-width: 200px;
+}
+
+#run-simulation:hover {
+  background: #27ae60;
+}
+
+/* Tables */
+table {
+  
+  width: 70%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: #f8f9fa;
+}
+
+/* Results section */
+#results {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+#queue-visualization, #gantt-chart {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid var(--border);
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#gantt-chart {
+  display: none;
+}
+
+/* Error message */
+.error-message {
+  color: var(--accent);
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(231, 77, 60, 0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+  
+  select, input {
+      width: 100%;
+      margin: 5px 0;
+  }
+  
+  .queue-selection {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.add-process, #results, table {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.queue-state-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.queue-state-table th {
+  background: var(--primary);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.queue-state-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.queue-state-table .time-cell {
+  font-weight: bold;
+  background: #f8f9fa;
+}
+
+.queue-state-table .active-process {
+  background: rgba(46, 204, 113, 0.1);
+  font-weight: bold;
+}
+
+.queue-state-table .waiting-process {
+  color: #7f8c8d;
+}
+
+.queue-state-table .completed-process {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
